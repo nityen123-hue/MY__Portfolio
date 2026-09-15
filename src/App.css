@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #08111f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #0f1d31;
+}
+
+.navbar-brand span,
+.blue {
+    color: #66d9ff;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+
+.nav-link:hover {
+    color: #66d9ff !important;
+}
+
+.logo-img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.hero {
+    min-height: 600px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero-text {
+    color: #aab7c8;
+    font-size: 17px;
+    max-width: 650px;
+}
+
+.profile {
+    background-color: #0f1d31;
+    border: 1px solid #21334b;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.profile p {
+    color: #aab7c8;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #18334c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #66d9ff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.badge {
+    background-color: transparent;
+    color: #aab7c8;
+    border: 1px solid #21334b;
+    margin: 5px 3px;
+    padding: 7px 10px;
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #aab7c8;
+    margin-bottom: 25px;
+}
+
+
+
+.card {
+    background-color: #0f1d31;
+    border: 1px solid #21334b;
+    border-radius: 15px;
+    color: white;
+}
+
+.card p {
+    color: #aab7c8;
+}
+
+
+.project-link,
+.card a {
+    color: #66d9ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: white;
+}
+
+
+
+.contact-box {
+    display: block;
+    background-color: #0f1d31;
+    border: 1px solid #21334b;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-box:hover {
+    border-color: #66d9ff;
+}
+
+.contact-box small {
+    display: block;
+    color: #aab7c8;
+    margin-bottom: 5px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #21334b;
+    color: #aab7c8;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
