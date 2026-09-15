@@ -1,17 +1,133 @@
-# React + Vite
+# 🌐 Nityen Kakadiya - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using **React.js**, **Bootstrap 5**, **HTML**, **CSS**, and **JavaScript**.
 
-Currently, two official plugins are available:
+This portfolio showcases my skills, projects, education, and contact information as a **Full Stack Web Developer**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Responsive design for mobile, tablet, and desktop
+* Modern dark theme
+* Simple and clean user interface
+* Bootstrap 5 responsive layout
+* React.js component-based structure
+* Smooth navigation between sections
+* Skills section
+* Projects showcase
+* Education section
+* Contact section
+* GitHub and LinkedIn links
+* Mobile-friendly navigation menu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+* **React.js**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
+* **Bootstrap 5**
+* **Vite**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# MY__Portfolio" 
+## 📂 Portfolio Sections
+
+* 🏠 Home
+* 👤 About Me
+* 💻 Skills
+* 🚀 Projects
+* 🎓 Education
+* 📞 Contact
+
+## 💻 Projects
+
+### 1. Management App
+
+A management application created using web development technologies.
+
+🔗 **GitHub:**
+https://github.com/nityen123-hue/manegementapp
+
+### 2. API Project
+
+A project created using API integration and JavaScript.
+
+🔗 **GitHub:**
+https://github.com/nityen123-hue/API-project
+
+### 3. Quiz Project
+
+An interactive quiz application with questions and answers.
+
+🔗 **GitHub:**
+https://github.com/nityen123-hue/QuizProject
+
+## 🎓 Education
+
+**BCA - Second Year**
+Rajkot, Gujarat
+
+**Full Stack Web Development**
+Red & White Skill Education, Rajkot
+
+## 🧑‍💻 Skills
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* React.js
+* Git & GitHub
+* API Integration
+* Responsive Web Design
+
+## 🌍 Languages
+
+* Gujarati
+* Hindi
+* English
+
+## 📞 Contact
+
+**Email:**
+[kakadiyanityen123@gmail.com](mailto:kakadiyanityen123@gmail.com)
+
+**Phone:**
+9313728020
+
+**GitHub:**
+https://github.com/nityen123-hue
+
+**LinkedIn:**
+https://www.linkedin.com/in/nityen-kakadiya-9283b337
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Go to the project folder:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+The project will run on your local development server.
+
+
+```
+
+
