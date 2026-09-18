@@ -1,450 +1,357 @@
 import { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaSun,
+  FaMoon,
+  FaArrowRight,
+  FaArrowLeft,
+  FaUsers,
+  FaTasks,
+  FaProjectDiagram,
+  FaBars,
+  FaCheck,
+  FaCog,
+  FaCode,
+  FaDatabase,
+  FaServer,
+} from "react-icons/fa";
+
 import "./App.css";
 
 function App() {
-
-    const [menu, setMenu] = useState(false);
-
-    return (
-        <div>
-
-            <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-                <div className="container">
-                    <a className="navbar-brand fw-bold" href="#">
-                        <img
-                            src="https://i.pinimg.com/736x/80/87/19/808719df65094414e56a2856f0670dba.jpg"
-                            alt="Nityen Logo"
-                            className="logo-img"
-                        />
-                    </a>
-
-
-                    <button
-                        className="navbar-toggler"
-                        onClick={() => setMenu(!menu)}
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
-
-                    <div className={`collapse navbar-collapse ${menu ? "show" : ""}`}>
-
-                        <div className="navbar-nav ms-auto">
-
-                            <a className="nav-link" href="#about">About</a>
-
-                            <a className="nav-link" href="#skills">Skills</a>
-
-                            <a className="nav-link" href="#projects">Projects</a>
-
-                            <a className="nav-link" href="#education">Education</a>
-
-                            <a className="nav-link" href="#contact">Contact</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </nav>
-
-
-         
-            <section className="container hero">
-
-                <div className="row align-items-center">
-
-                    <div className="col-lg-7 text-center text-lg-start">
-
-                        <h5 className="blue">
-                            FULL STACK WEB DEVELOPER • FRESHER
-                        </h5>
-
-                        <h1 className="display-3 fw-bold">
-                            Hi, I'm <span className="blue">
-                                Nityen Kakadiya
-                            </span>
-                        </h1>
-
-                        <p className="hero-text">
-                            I’m a BCA student and Full Stack Web Development
-                            learner passionate about creating responsive and
-                            user-friendly web applications.
-                        </p>
-
-                        <div className="mt-4">
-
-                            <a
-                                href="#projects"
-                                className="btn btn-primary me-2"
-                            >
-                                View Projects
-                            </a>
-
-                            <a
-                                href="mailto:kakadiyanityen123@gmail.com"
-                                className="btn btn-outline-info"
-                            >
-                                Contact Me
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div className="col-lg-5 mt-5 mt-lg-0">
-
-                        <div className="profile text-center">
-
-                            <div className="avatar">
-                                NK
-                            </div>
-
-                            <h3>Nityen Kakadiya</h3>
-
-                            <p>
-                                Full Stack Web Developer - Fresher
-                            </p>
-
-                            <span className="badge rounded-pill">
-                                BCA - 2nd Year
-                            </span>
-
-                            <span className="badge rounded-pill">
-                                Rajkot
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section id="about">
-                <div className="container">
-                    <h2>About Me</h2>
-
-                    <p className="subtitle">
-                        A motivated developer focused on learning and building.
-                    </p>
-
-                    <div className="card p-4">
-
-                        <p>
-                            I am currently pursuing BCA (Second Year) and
-                            learning Full Stack Web Development at Red & White
-                            Skill Education. I enjoy working with frontend and
-                            backend technologies, building projects,
-                            understanding APIs and solving practical problems.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            {/* Skills */}
-            <section id="skills">
-
-                <div className="container">
-
-                    <h2>Technical Skills</h2>
-
-                    <p className="subtitle">
-                        Technologies and tools I work with.
-                    </p>
-
-                    <div className="row g-4">
-
-                        <div className="col-md-6">
-                            <div className="card p-4">
-
-                                <h3>Frontend</h3>
-
-                                <span className="badge">HTML5</span>
-                                <span className="badge">CSS3</span>
-                                <span className="badge">JavaScript</span>
-                                <span className="badge">React.js</span>
-                                <span className="badge">Bootstrap</span>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <div className="card p-4">
-
-                                <h3>Backend & Database</h3>
-
-                                <span className="badge">Node.js</span>
-                                <span className="badge">Express.js</span>
-                                <span className="badge">REST API</span>
-                                <span className="badge">MongoDB</span>
-                                <span className="badge">MySQL</span>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <div className="card p-4">
-
-                                <h3>Tools</h3>
-
-                                <span className="badge">Git</span>
-                                <span className="badge">GitHub</span>
-                                <span className="badge">VS Code</span>
-                                <span className="badge">Chrome DevTools</span>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <div className="card p-4">
-
-                                <h3>Strengths</h3>
-
-                                <span className="badge">Quick Learner</span>
-                                <span className="badge">Problem Solving</span>
-                                <span className="badge">Teamwork</span>
-                                <span className="badge">Communication</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-          
-            <section id="projects">
-
-                <div className="container">
-
-                    <h2>Featured Projects</h2>
-
-                    <p className="subtitle">
-                        Projects available on my GitHub.
-                    </p>
-
-                    <div className="row g-4">
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>Management App</h3>
-
-                                <p>
-                                    A web application focused on managing
-                                    application data and functionality.
-                                </p>
-
-                                <a
-                                    href="https://github.com/nityen123-hue/manegementapp"
-                                    target="_blank"
-                                >
-                                    View on GitHub →
-                                </a>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>API Project</h3>
-
-                                <p>
-                                    A backend/API project created to practice
-                                    API handling and server-side development.
-                                </p>
-
-                                <a
-                                    href="https://github.com/nityen123-hue/API-project"
-                                    target="_blank"
-                                >
-                                    View on GitHub →
-                                </a>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>Quiz Project</h3>
-
-                                <p>
-                                    An interactive quiz application with a
-                                    simple and user-friendly interface.
-                                </p>
-
-                                <a
-                                    href="https://github.com/nityen123-hue/QuizProject"
-                                    target="_blank"
-                                >
-                                    View on GitHub →
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section id="education">
-
-                <div className="container">
-
-                    <h2>Education</h2>
-
-                    <p className="subtitle">
-                        Academic and professional learning.
-                    </p>
-
-                    <div className="row g-4">
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>Bachelor of Computer Applications</h3>
-
-                                <p>BCA - Second Year</p>
-
-                                <span className="badge">
-                                    Rajkot, Gujarat
-                                </span>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>Full Stack Web Development</h3>
-
-                                <p>Red & White Skill Education</p>
-
-                                <span className="badge">Mavdi</span>
-                                <span className="badge">Rajkot</span>
-
-                            </div>
-                        </div>
-
-
-                        <div className="col-md-4">
-                            <div className="card p-4 h-100">
-
-                                <h3>Languages</h3>
-
-                                <p>
-                                    Gujarati • Hindi • English
-                                </p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-         
-            <section id="contact">
-
-                <div className="container">
-
-                    <h2>Let's Connect</h2>
-
-                    <p className="subtitle">
-                        Open to learning opportunities, internships and
-                        entry-level roles.
-                    </p>
-
-                    <div className="row g-4">
-
-                        <div className="col-md-6">
-                            <a href="tel:9313728020" className="contact-box">
-                                <small>Phone</small>
-                                <strong>9313728020</strong>
-                            </a>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <a
-                                href="mailto:kakadiyanityen123@gmail.com"
-                                className="contact-box"
-                            >
-                                <small>Email</small>
-                                <strong>
-                                    kakadiyanityen123@gmail.com
-                                </strong>
-                            </a>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <a
-                                href="https://github.com/nityen123-hue"
-                                target="_blank"
-                                className="contact-box"
-                            >
-                                <small>GitHub</small>
-                                <strong>
-                                    github.com/nityen123-hue
-                                </strong>
-                            </a>
-                        </div>
-
-
-                        <div className="col-md-6">
-                            <a
-                                href="https://www.linkedin.com/in/nityen-kakadiya-9283b3375"
-                                target="_blank"
-                                className="contact-box"
-                            >
-                                <small>LinkedIn</small>
-                                <strong>
-                                    linkedin.com/in/nityen-kakadiya-9283b3375
-                                </strong>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <footer>
-                © 2026 Nityen Kakadiya • Full Stack Web Developer
-            </footer>
+  const [darkMode, setDarkMode] = useState(true);
+  const [page, setPage] = useState("home");
+  const goTo = (newPage) => {
+    setPage(newPage);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className={darkMode ? "app dark" : "app light"}>
+      <header className="navbar">
+        <div className="nav-container">
+          <button
+            className="logo"
+            onClick={() => goTo("home")}
+          >
+            <span className="logo-icon">✣</span>
+            Nityen Kakadiya
+          </button>
+          <nav className="nav-menu">
+            <button
+              className={
+                page === "works"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              onClick={() => goTo("works")}
+            >
+              Works
+            </button>
+          </nav>
+
+          <button
+            className="theme-button"
+            onClick={() => setDarkMode(!darkMode)}
+            aria-label="Toggle theme"
+          >
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </button>
 
         </div>
-    );
+      </header>
+
+      {page === "home" && (
+        <main className="home-container">
+          <section className="hero">
+            <img
+              src="/3d-model.png"
+              alt="3D Developer"
+              className="hero-3d"
+            />
+          </section>
+          <div className="intro">
+            Hello, I'm a Full Stack Web Developer!
+          </div>
+          <section className="profile">
+            <div className="profile-info">
+              <h1>Nityen Kakadiya</h1>
+              <p>
+                Full Stack Web Developer
+              </p>
+            </div>
+            <div className="profile-photo">
+              <img
+                src="/profile.jpg"
+                alt="Nityen Kakadiya"
+              />
+            </div>
+          </section>
+
+          <section className="work-content">
+            <h2>Work</h2>
+            <div className="heading-line work-line"></div>
+            <p>
+              I am a Full Stack Web Development learner interested
+              in creating modern, responsive and user-friendly
+              web applications.
+            </p>
+            <p>
+              I work with frontend, backend, databases and APIs
+              to build practical digital solutions. I enjoy learning
+              new technologies and turning ideas into useful
+              web applications.
+            </p>
+            <button className="resume-button"onClick={() => goTo("resume")} >
+              My Resume
+              <FaArrowRight />
+            </button>
+          </section>
+
+
+          <section className="bio">
+            <h2>Bio</h2>
+            <div className="heading-line bio-line"></div>
+            <div className="bio-row">
+              <strong>2008</strong>
+              <span>Born in Gujarat, India.</span>
+            </div>
+            <div className="bio-row">
+              <strong>2024</strong>
+              <span>
+                Completed Higher Secondary Education.
+              </span>
+            </div>
+            <div className="bio-row">
+              <strong>2026</strong>
+              <span>
+                Currently pursuing BCA
+                (Bachelor of Computer Application).
+              </span>
+            </div>
+            <div className="bio-row">
+              <strong>Now</strong>
+              <span>
+                Learning Full Stack Web Development and
+                creating practical projects.
+              </span>
+            </div>
+
+            <div className="love-section">
+              <h3>
+                I <span>♥</span>
+              </h3>
+              <div className="heading-line love-line"></div>
+              <p>
+                Coding, Web Development, Learning New Skills,
+                Business & Technology
+              </p>
+            </div>
+
+            <div className="web-section">
+              <h2>On the web</h2>
+              <div className="heading-line web-line"></div>
+              <a  href="https://github.com/"  target="_blank"  rel="noopener noreferrer">
+                <FaGithub />
+                GitHub
+              </a>
+
+              <a  href="https://www.linkedin.com/"  target="_blank"  rel="noopener noreferrer" >
+                <FaLinkedin />
+                LinkedIn
+              </a>
+
+              <a  href="https://www.instagram.com/"  target="_blank"  rel="noopener noreferrer" >
+                <FaInstagram />
+                Instagram
+              </a>
+            </div>
+          </section>
+        </main>
+      )}
+
+      {page === "works" && (
+        <main className="works-container">
+          <section className="works-hero">
+            <img  src="/3d-model.png"  alt="3D Developer"  className="works-3d" />
+          </section>
+          <h1 className="works-heading">
+            Works
+          </h1>
+          <div className="heading-line works-line"></div>
+          <div className="projects-grid">
+            <article className="project">
+              <div className="project-image management">
+                <div className="management-navbar">
+                  <span>
+                    Management
+                  </span>
+                  <span className="management-user">
+                    NK
+                  </span>
+                </div>
+
+
+                <div className="management-main">
+                  <div className="management-sidebar">
+                    <FaBars />
+                    <FaUsers />
+                    <FaCheck />
+                    <FaCog />
+                  </div>
+
+                  <div className="management-dashboard">
+                    <small>
+                      Dashboard
+                    </small>
+
+                    <div className="dashboard-cards">
+                      <div className="dashboard-card">
+                        <FaUsers />
+                        <span>
+                          Users
+                        </span>
+                        <strong>
+                          120+
+                        </strong>
+                      </div>
+
+
+                      <div className="dashboard-card">
+                        <FaTasks />
+                        <span>
+                          Tasks
+                        </span>
+                        <strong>
+                          48
+                        </strong>
+                      </div>
+
+                      <div className="dashboard-card">
+                        <FaProjectDiagram />
+                        <span>
+                          Projects
+                        </span>
+                        <strong>
+                          12
+                        </strong>
+                      </div>
+                    </div>
+
+
+                    <div className="dashboard-chart">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>
+                Management App
+              </h2>
+              <p>
+                A responsive management application for
+                managing users, tasks and projects with
+                a clean dashboard interface.
+              </p>
+            </article>
+
+
+
+
+            <article className="project">
+              <div className="project-image api-project">
+                <div className="api-header">
+                  <span>
+                    REST API
+                  </span>
+                  <span className="api-online">
+                    ● Online
+                  </span>
+                </div>
+
+
+                <div className="api-body">
+                  <div className="api-request">
+                    <span className="api-method">
+                      GET
+                    </span>
+                    <span className="api-url">
+                      /api/users
+                    </span>
+                  </div>
+
+
+                  <div className="api-code">
+                    <span>
+                      {"{"}
+                    </span>
+                    <span>
+                      "status": "success",
+                    </span>
+                    <span>
+                      "users": 120,
+                    </span>
+                    <span>
+                      "message": "Data fetched"
+                    </span>
+                    <span>
+                      {"}"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+              <h2>
+                REST API Project
+              </h2>
+              <p>
+                A backend REST API project with routes,
+                controllers, database integration and
+                CRUD operations.
+              </p>
+            </article>
+          </div>
+        </main>
+      )}
+
+      {page === "resume" && (
+        <main className="resume-page">
+          <div className="resume-header">
+            <button  className="back-button"  onClick={() => goTo("home")}>
+              <FaArrowLeft />
+              Back
+            </button>
+
+            <h1>
+              My Resume
+            </h1>
+            <a href="/resume.png" target="_blank" rel="noopener noreferrer" className="resume-open-button" >
+              Open Resume
+            </a>
+          </div>
+
+
+          <div className="resume-image-container">
+            <img src="/resume.png" alt="Nityen Kakadiya Resume" className="resume-image"  />
+          </div>
+        </main>
+      )}
+
+      <footer className="footer">
+        © 2026 Nityen Kakadiya. All Rights Reserved.
+      </footer>
+    </div>
+  );
 }
-
 export default App;
-
